@@ -34,8 +34,8 @@
     <ClCompile Include="..\..\..\openframeworks\addons\ofxGui\src\ofxToggle.cpp">
       <Filter>addons\ofxGui\src</Filter>
     </ClCompile>
-    <ClCompile Include="src\ofApp.cpp">
-      <Filter>src\game</Filter>
+    <ClCompile Include="src\game\ofApp.cpp">
+      <Filter>src\SourceFiles\game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,14 +51,29 @@
     <Filter Include="addons\ofxGui\src">
       <UniqueIdentifier>{645E9533-4DCD-6179-1CDF-CB65}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\estructure">
+    <Filter Include="src\HeaderFiles">
+      <UniqueIdentifier>{02feda76-8c3b-4802-a0f3-ed978702fb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SourceFiles">
+      <UniqueIdentifier>{00811e47-3163-4057-bf1b-ce972ee64502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HeaderFiles\estructure">
       <UniqueIdentifier>{93c2e37d-06aa-4f5d-a7a9-2c9fbee871eb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\components">
+    <Filter Include="src\HeaderFiles\components">
       <UniqueIdentifier>{27bd5e64-bdce-45d0-bf13-60dc7bb0489f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\game">
-      <UniqueIdentifier>{a2b4bb86-805a-456a-badd-45b903fe694c}</UniqueIdentifier>
+    <Filter Include="src\SourceFiles\components">
+      <UniqueIdentifier>{ce38f783-3129-4447-b061-9f463da9e1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SourceFiles\estructure">
+      <UniqueIdentifier>{cd0370b7-10fa-44a9-a4f0-410d02053df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HeaderFiles\game">
+      <UniqueIdentifier>{dac909a0-019b-4159-8777-e150a3150605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SourceFiles\game">
+      <UniqueIdentifier>{55c986fa-0f67-42fd-9540-c8948ddf6795}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -98,8 +113,8 @@
     <ClInclude Include="..\..\..\openframeworks\addons\ofxGui\src\ofxToggle.h">
       <Filter>addons\ofxGui\src</Filter>
     </ClInclude>
-    <ClInclude Include="src\ofApp.h">
-      <Filter>src\game</Filter>
+    <ClInclude Include="src\game\ofApp.h">
+      <Filter>src\HeaderFiles\game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
