@@ -4,6 +4,6 @@
 
 namespace ecs {
 	class Entity {
-
+		
 	};
 }

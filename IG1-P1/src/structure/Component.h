@@ -10,7 +10,8 @@ namespace ecs {
 		ecs::Entity* ent_;
 		ecs::Manager* mngr_;
 
-		Component() : ent_(nullptr), mngr_(nullptr) {}
+		Component() : ent_(nullptr), mngr_(nullptr) {} //Clase abstracta porque tiene la constructora en provado
+		//no se puede hacer un new component, tan solo new de sus hijos
 
 	public:
 
@@ -25,7 +26,9 @@ namespace ecs {
 		virtual void initComponent() { }
 
 		// manejar el update 
-		virtual void update(float frameTime) = 0;
+		virtual void update(float frameTime) = 0; //Poner aquí un =0 en vez de {} tambien nos indica que es una clase abstracta
+		//Los hijos estaarías obligados a inicializar estos métodos. Para mayor comodidad se puede no poner = 0 y poner directamente {}
+		//asi sus hijos no están obligados a redefinir estos 3 métodos
 
 		// manejar el pintado
 		virtual void render() = 0;
