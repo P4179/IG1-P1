@@ -140,6 +140,6 @@ namespace ecs {
 			constexpr cmpId cId = T::id;
 
 			return cmps_[cId] != nullptr;
-		}
+		}		
 	};
 }
