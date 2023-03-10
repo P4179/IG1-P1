@@ -57,9 +57,6 @@
     <Filter Include="src\SourceFiles">
       <UniqueIdentifier>{00811e47-3163-4057-bf1b-ce972ee64502}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\HeaderFiles\estructure">
-      <UniqueIdentifier>{93c2e37d-06aa-4f5d-a7a9-2c9fbee871eb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\HeaderFiles\components">
       <UniqueIdentifier>{27bd5e64-bdce-45d0-bf13-60dc7bb0489f}</UniqueIdentifier>
     </Filter>
@@ -74,6 +71,9 @@
     </Filter>
     <Filter Include="src\SourceFiles\game">
       <UniqueIdentifier>{55c986fa-0f67-42fd-9540-c8948ddf6795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HeaderFiles\structure">
+      <UniqueIdentifier>{93c2e37d-06aa-4f5d-a7a9-2c9fbee871eb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +114,18 @@
       <Filter>addons\ofxGui\src</Filter>
     </ClInclude>
     <ClInclude Include="src\game\ofApp.h">
+      <Filter>src\HeaderFiles\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structure\Component.h">
+      <Filter>src\HeaderFiles\structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structure\Manager.h">
+      <Filter>src\HeaderFiles\structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structure\Entity.h">
+      <Filter>src\HeaderFiles\structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\game\checkML.h">
       <Filter>src\HeaderFiles\game</Filter>
     </ClInclude>
   </ItemGroup>
