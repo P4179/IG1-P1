@@ -7,8 +7,8 @@
 namespace ecs {
 	class Component {
 	protected:
-		ecs::Entity* ent_;
-		ecs::Manager* mngr_;
+		Entity* ent_;
+		Manager* mngr_;
 
 		Component() : ent_(nullptr), mngr_(nullptr) {} //Clase abstracta porque tiene la constructora en provado
 		//no se puede hacer un new component, tan solo new de sus hijos

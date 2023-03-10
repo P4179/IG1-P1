@@ -10,7 +10,7 @@ using namespace std;
 namespace ecs {
 	class Entity {
 	private:
-		bool alive_;
+		bool alive_; //Para eliminar las entidades que no estén vivas para que no explote todo al intentar hacer sus render, handleInput...
 		Manager* mngr_;
 		// vector con todos los componentes que tiene una entidad para recorrerlos fácilmente
 		vector<Component*> currCmps_;
@@ -76,7 +76,7 @@ namespace ecs {
 		// T es el tipo de componente
 		// Ts son los tipos de los argumentos que recibe el componente
 		// se utiliza && porque es lo que recibe de argumento forward
-		template<typename T, typename ...Ts>
+		template<typename T, typename ...Ts>//SE PONE ENCIMA DEL MÉTODO QUE VAYA A NECESITAR QUE EL USUARIO PONGA EL TIPO
 		inline T* addComponent(Ts&& ...args) {
 			// crea el componente
 			// forward asegura que el tipo con el que se cree el objeto
